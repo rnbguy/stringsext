@@ -312,7 +312,7 @@ impl<'a> Iterator for SplitStr<'a> {
                 // Exit 3:
                 if self.last_s_was_maybe_cut && ok_char_nb > 0 && ok_s_p == self.inp_start_p {
                     break;
-                // Exit 4:
+                    // Exit 4:
                 } else if ok_char_nb >= self.chars_min_nb as usize && grep_char_ok {
                     // Yes, we collected enough for this run. The rest of the
                     // buffer can be treated later in a `next()`.

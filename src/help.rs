@@ -5,10 +5,13 @@ use crate::mission::UNICODE_BLOCK_FILTER_ALIASSE;
 use crate::mission::{Missions, MISSIONS};
 use crate::options::ARGS;
 use crate::options::ASCII_ENC_LABEL;
-use crate::AUTHOR;
-use crate::VERSION;
 use std::process;
 use std::str;
+
+/// Uses the version-number defined in `../Cargo.toml`.
+const VERSION: Option<&'static str> = option_env!("CARGO_PKG_VERSION");
+/// (c) Jens Getreu
+const AUTHOR: &str = "(c) Jens Getreu, 2016-2020";
 
 /// Function called at the beginning of `stringsext`. When help is printed to the
 /// user, the program exits.
