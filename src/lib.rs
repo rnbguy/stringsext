@@ -52,16 +52,14 @@
 
 extern crate encoding_rs;
 
-mod finding;
-mod finding_collection;
-mod help;
-mod helper;
-mod input;
-mod mission;
-mod options;
-mod scanner;
-
-use std::str;
+pub mod finding;
+pub mod finding_collection;
+pub mod help;
+pub mod helper;
+pub mod input;
+pub mod mission;
+pub mod options;
+pub mod scanner;
 
 #[cfg(test)]
 mod tests {
